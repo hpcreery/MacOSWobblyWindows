@@ -103,8 +103,8 @@ NSTimeInterval previousUpdate = 0.0;
   CGSConnection cid = _CGSDefaultConnection();
 
   // normal grid
-  int GRID_WIDTH = 8;
-  int GRID_HEIGHT = 6;
+  int GRID_WIDTH = 10;
+  int GRID_HEIGHT = 10;
   CGPointWarp mesh[GRID_HEIGHT][GRID_WIDTH];
   for (int y = 0; y < GRID_HEIGHT; y++) {
     for (int x = 0; x < GRID_WIDTH; x++) {

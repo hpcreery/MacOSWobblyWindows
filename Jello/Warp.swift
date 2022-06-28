@@ -9,10 +9,10 @@
 import AppKit
 
 
-internal var GRID_WIDTH = 8
-internal var GRID_HEIGHT = 6
-internal var springK: CGFloat = 7
-internal var friction: CGFloat = 1.5
+internal var GRID_WIDTH = 10
+internal var GRID_HEIGHT = 10
+internal var springK: CGFloat = 2
+internal var friction: CGFloat = 2
 
 internal func convert(toPosition i: Int) -> (Int, Int) {
   return (i % GRID_WIDTH, i / GRID_WIDTH)
@@ -147,9 +147,9 @@ extension NSScreen {
   }
 
   @objc public func startDrag(at point: CGPoint) {
-    let distances = particles.prefix(GRID_WIDTH)
+    let distances = particles
       .map { $0.position.distanceTo(point: point) }
-
+    
     let closest = distances
       .map { ($0 - distances.min()!) / (distances.max()! - distances.min()!) }
       .enumerated()
@@ -161,7 +161,7 @@ extension NSScreen {
     particles[idx].immobile = true
 
     for (offset, distance) in closest {
-      let particle = (GRID_WIDTH * (GRID_HEIGHT - 1)) + offset
+      let particle = offset
       springs.append(Spring(
           a: particle,
           b: idx,
