@@ -9,6 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import <objc/runtime.h>
 
-@interface JelloInject : NSObject
+@interface WobblyWindowsInject : NSObject
 
 @end

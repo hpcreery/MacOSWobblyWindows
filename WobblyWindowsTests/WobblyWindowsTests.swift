@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import Jello
+@testable import WobblyWindows
 
-class JelloTests: XCTestCase {
+class WobblyWindowsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

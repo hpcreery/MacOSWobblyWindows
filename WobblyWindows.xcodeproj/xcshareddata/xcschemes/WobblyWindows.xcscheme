@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B47DE1491F23FB4300DE9C65"
-               BuildableName = "Jello.app"
-               BlueprintName = "Jello"
-               ReferencedContainer = "container:Jello.xcodeproj">
+               BuildableName = "WobblyWindows.app"
+               BlueprintName = "WobblyWindows"
+               ReferencedContainer = "container:WobblyWindows.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B47DE1611F23FB4300DE9C65"
-               BuildableName = "JelloTests.xctest"
-               BlueprintName = "JelloTests"
-               ReferencedContainer = "container:Jello.xcodeproj">
+               BuildableName = "WobblyWindowsTests.xctest"
+               BlueprintName = "WobblyWindowsTests"
+               ReferencedContainer = "container:WobblyWindows.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B47DE1491F23FB4300DE9C65"
-            BuildableName = "Jello.app"
-            BlueprintName = "Jello"
-            ReferencedContainer = "container:Jello.xcodeproj">
+            BuildableName = "WobblyWindows.app"
+            BlueprintName = "WobblyWindows"
+            ReferencedContainer = "container:WobblyWindows.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B47DE1491F23FB4300DE9C65"
-            BuildableName = "Jello.app"
-            BlueprintName = "Jello"
-            ReferencedContainer = "container:Jello.xcodeproj">
+            BuildableName = "WobblyWindows.app"
+            BlueprintName = "WobblyWindows"
+            ReferencedContainer = "container:WobblyWindows.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

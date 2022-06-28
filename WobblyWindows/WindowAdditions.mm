@@ -10,7 +10,7 @@
 #import "Cocoa/Cocoa.h"
 #import <SpriteKit/SpriteKit.h>
 #import <objc/runtime.h>
-#import "Jello-Swift.h"
+#import "WobblyWindows-Swift.h"
 
 #ifdef __cplusplus
 extern "C" {

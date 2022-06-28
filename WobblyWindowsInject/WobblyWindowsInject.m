@@ -6,27 +6,27 @@
 //  Copyright © 2017 collaris. All rights reserved.
 //
 
-#import "JelloInject.h"
-#import "Jello-Swift.h"
+#import "WobblyWindowsInject.h"
+#import "WobblyWindows-Swift.h"
 #import "WindowAdditions.h"
 
-static JelloInject* plugin = nil;
+static WobblyWindowsInject* plugin = nil;
 
-@implementation JelloInject
+@implementation WobblyWindowsInject
 
 #pragma mark SIMBL methods and loading
 
-+ (JelloInject*)sharedInstance {
++ (WobblyWindowsInject*)sharedInstance {
 	if (plugin == nil)
-		plugin = [[JelloInject alloc] init];
+		plugin = [[WobblyWindowsInject alloc] init];
 	
 	return plugin;
 }
 
 + (void)load {
-	[[JelloInject sharedInstance] loadPlugin];
+	[[WobblyWindowsInject sharedInstance] loadPlugin];
 	
-	NSLog(@"JelloInject loaded.");
+	NSLog(@"WobblyWindowsInject loaded.");
 }
 
 - (void)loadPlugin {

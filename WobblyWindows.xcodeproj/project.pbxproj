@@ -17,7 +17,7 @@
 		B414A11622F1E36C00D02192 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4502AA52116FB8900C6D503 /* Particle.swift */; };
 		B414A11722F1E36C00D02192 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4502AA72117018B00C6D503 /* Spring.swift */; };
 		B414A11822F1E36C00D02192 /* Solver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FCEB63211CDB0D00E78CCF /* Solver.swift */; };
-		B414A11B22F1E38D00D02192 /* JelloInject.m in Sources */ = {isa = PBXBuildFile; fileRef = B414A11A22F1E38D00D02192 /* JelloInject.m */; };
+		B414A11B22F1E38D00D02192 /* WobblyWindowsInject.m in Sources */ = {isa = PBXBuildFile; fileRef = B414A11A22F1E38D00D02192 /* WobblyWindowsInject.m */; };
 		B419A4181F2B2C3A00FECC47 /* WindowAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = B4D504941F292493001B8C1D /* WindowAdditions.h */; };
 		B419A4191F2B2C3A00FECC47 /* WindowAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = B4D504951F292493001B8C1D /* WindowAdditions.mm */; };
 		B4502AA62116FB8900C6D503 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4502AA52116FB8900C6D503 /* Particle.swift */; };
@@ -25,7 +25,7 @@
 		B47DE14E1F23FB4300DE9C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47DE14D1F23FB4300DE9C65 /* AppDelegate.swift */; };
 		B47DE1561F23FB4300DE9C65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47DE1551F23FB4300DE9C65 /* ViewController.swift */; };
 		B47DE15B1F23FB4300DE9C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47DE1591F23FB4300DE9C65 /* Main.storyboard */; };
-		B47DE1671F23FB4300DE9C65 /* JelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47DE1661F23FB4300DE9C65 /* JelloTests.swift */; };
+		B47DE1671F23FB4300DE9C65 /* WobblyWindowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47DE1661F23FB4300DE9C65 /* WobblyWindowsTests.swift */; };
 		B47DE1721F23FB8D00DE9C65 /* Warp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47DE1711F23FB8D00DE9C65 /* Warp.swift */; };
 		B49962D72117404300B110BD /* CGVector+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49962D62117404300B110BD /* CGVector+Math.swift */; };
 		B49962D92117405400B110BD /* CGPoint+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49962D82117405400B110BD /* CGPoint+Math.swift */; };
@@ -44,23 +44,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B414A10522F1E16A00D02192 /* JelloInject.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JelloInject.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		B414A10722F1E16A00D02192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B414A10522F1E16A00D02192 /* WobblyWindowsInject.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WobblyWindowsInject.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B414A10722F1E16A00D02192 /* WobblyWindowsInject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WobblyWindowsInject-Info.plist"; sourceTree = "<group>"; };
 		B414A10C22F1E19800D02192 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		B414A10E22F1E2BF00D02192 /* JelloInject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "JelloInject-Info.plist"; path = "JelloInject/JelloInject-Info.plist"; sourceTree = SOURCE_ROOT; };
-		B414A11922F1E38D00D02192 /* JelloInject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JelloInject.h; path = JelloInject/JelloInject.h; sourceTree = SOURCE_ROOT; };
-		B414A11A22F1E38D00D02192 /* JelloInject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JelloInject.m; path = JelloInject/JelloInject.m; sourceTree = SOURCE_ROOT; };
+		B414A10E22F1E2BF00D02192 /* WobblyWindowsInject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WobblyWindowsInject-Info.plist"; path = "WobblyWindowsInject/WobblyWindowsInject-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B414A11922F1E38D00D02192 /* WobblyWindowsInject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WobblyWindowsInject.h; path = WobblyWindowsInject/WobblyWindowsInject.h; sourceTree = SOURCE_ROOT; };
+		B414A11A22F1E38D00D02192 /* WobblyWindowsInject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WobblyWindowsInject.m; path = WobblyWindowsInject/WobblyWindowsInject.m; sourceTree = SOURCE_ROOT; };
 		B414A11C22F1E40A00D02192 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B435E79F22F1C78900FF5C55 /* Jello.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jello.entitlements; sourceTree = "<group>"; };
 		B4502AA52116FB8900C6D503 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
 		B4502AA72117018B00C6D503 /* Spring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
-		B47DE14A1F23FB4300DE9C65 /* Jello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jello.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B47DE14A1F23FB4300DE9C65 /* WobblyWindows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WobblyWindows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47DE14D1F23FB4300DE9C65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47DE1551F23FB4300DE9C65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B47DE15A1F23FB4300DE9C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B47DE15C1F23FB4300DE9C65 /* Jello-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jello-Info.plist"; sourceTree = "<group>"; };
-		B47DE1621F23FB4300DE9C65 /* JelloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JelloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B47DE1661F23FB4300DE9C65 /* JelloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JelloTests.swift; sourceTree = "<group>"; };
+		B47DE15C1F23FB4300DE9C65 /* WobblyWindows-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WobblyWindows-Info.plist"; sourceTree = "<group>"; };
+		B47DE1621F23FB4300DE9C65 /* WobblyWindowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WobblyWindowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B47DE1661F23FB4300DE9C65 /* WobblyWindowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WobblyWindowsTests.swift; sourceTree = "<group>"; };
 		B47DE1681F23FB4300DE9C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B47DE1711F23FB8D00DE9C65 /* Warp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warp.swift; sourceTree = "<group>"; };
 		B49962D62117404300B110BD /* CGVector+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGVector+Math.swift"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		B49962DA2117407600B110BD /* TimeInterval+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Additions.swift"; sourceTree = "<group>"; };
 		B4D504941F292493001B8C1D /* WindowAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowAdditions.h; sourceTree = "<group>"; };
 		B4D504951F292493001B8C1D /* WindowAdditions.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WindowAdditions.mm; sourceTree = "<group>"; };
-		B4EFF92B1F27C941003648C9 /* Jello-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jello-Bridging-Header.h"; sourceTree = "<group>"; };
+		B4EFF92B1F27C941003648C9 /* WobblyWindows-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WobblyWindows-Bridging-Header.h"; sourceTree = "<group>"; };
 		B4FCEB63211CDB0D00E78CCF /* Solver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,9 +101,9 @@
 		B40D616E22F1C62000E17A65 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B4EFF92B1F27C941003648C9 /* Jello-Bridging-Header.h */,
-				B47DE15C1F23FB4300DE9C65 /* Jello-Info.plist */,
-				B414A10E22F1E2BF00D02192 /* JelloInject-Info.plist */,
+				B4EFF92B1F27C941003648C9 /* WobblyWindows-Bridging-Header.h */,
+				B47DE15C1F23FB4300DE9C65 /* WobblyWindows-Info.plist */,
+				B414A10E22F1E2BF00D02192 /* WobblyWindowsInject-Info.plist */,
 				B435E79F22F1C78900FF5C55 /* Jello.entitlements */,
 			);
 			path = "Supporting Files";
@@ -117,12 +117,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		B414A10622F1E16A00D02192 /* JelloInject */ = {
+		B414A10622F1E16A00D02192 /* WobblyWindowsInject */ = {
 			isa = PBXGroup;
 			children = (
-				B414A10722F1E16A00D02192 /* Info.plist */,
+				B414A10722F1E16A00D02192 /* WobblyWindowsInject-Info.plist */,
 			);
-			path = JelloInject;
+			path = WobblyWindowsInject;
 			sourceTree = "<group>";
 		};
 		B414A10B22F1E19800D02192 /* Frameworks */ = {
@@ -137,9 +137,9 @@
 		B47DE1411F23FB4300DE9C65 = {
 			isa = PBXGroup;
 			children = (
-				B47DE14C1F23FB4300DE9C65 /* Jello */,
-				B47DE1651F23FB4300DE9C65 /* JelloTests */,
-				B414A10622F1E16A00D02192 /* JelloInject */,
+				B47DE14C1F23FB4300DE9C65 /* WobblyWindows */,
+				B47DE1651F23FB4300DE9C65 /* WobblyWindowsTests */,
+				B414A10622F1E16A00D02192 /* WobblyWindowsInject */,
 				B47DE14B1F23FB4300DE9C65 /* Products */,
 				B414A10B22F1E19800D02192 /* Frameworks */,
 			);
@@ -148,14 +148,14 @@
 		B47DE14B1F23FB4300DE9C65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B47DE14A1F23FB4300DE9C65 /* Jello.app */,
-				B47DE1621F23FB4300DE9C65 /* JelloTests.xctest */,
-				B414A10522F1E16A00D02192 /* JelloInject.bundle */,
+				B47DE14A1F23FB4300DE9C65 /* WobblyWindows.app */,
+				B47DE1621F23FB4300DE9C65 /* WobblyWindowsTests.xctest */,
+				B414A10522F1E16A00D02192 /* WobblyWindowsInject.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B47DE14C1F23FB4300DE9C65 /* Jello */ = {
+		B47DE14C1F23FB4300DE9C65 /* WobblyWindows */ = {
 			isa = PBXGroup;
 			children = (
 				B49962D52117402700B110BD /* Extensions */,
@@ -167,21 +167,21 @@
 				B4502AA52116FB8900C6D503 /* Particle.swift */,
 				B4502AA72117018B00C6D503 /* Spring.swift */,
 				B4FCEB63211CDB0D00E78CCF /* Solver.swift */,
-				B414A11922F1E38D00D02192 /* JelloInject.h */,
-				B414A11A22F1E38D00D02192 /* JelloInject.m */,
+				B414A11922F1E38D00D02192 /* WobblyWindowsInject.h */,
+				B414A11A22F1E38D00D02192 /* WobblyWindowsInject.m */,
 				B40D616F22F1C65100E17A65 /* Resources */,
 				B40D616E22F1C62000E17A65 /* Supporting Files */,
 			);
-			path = Jello;
+			path = WobblyWindows;
 			sourceTree = "<group>";
 		};
-		B47DE1651F23FB4300DE9C65 /* JelloTests */ = {
+		B47DE1651F23FB4300DE9C65 /* WobblyWindowsTests */ = {
 			isa = PBXGroup;
 			children = (
-				B47DE1661F23FB4300DE9C65 /* JelloTests.swift */,
+				B47DE1661F23FB4300DE9C65 /* WobblyWindowsTests.swift */,
 				B47DE1681F23FB4300DE9C65 /* Info.plist */,
 			);
-			path = JelloTests;
+			path = WobblyWindowsTests;
 			sourceTree = "<group>";
 		};
 		B49962D52117402700B110BD /* Extensions */ = {
@@ -197,9 +197,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B414A10422F1E16A00D02192 /* JelloInject */ = {
+		B414A10422F1E16A00D02192 /* WobblyWindowsInject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B414A10A22F1E16A00D02192 /* Build configuration list for PBXNativeTarget "JelloInject" */;
+			buildConfigurationList = B414A10A22F1E16A00D02192 /* Build configuration list for PBXNativeTarget "WobblyWindowsInject" */;
 			buildPhases = (
 				B414A10122F1E16A00D02192 /* Sources */,
 				B414A10222F1E16A00D02192 /* Frameworks */,
@@ -209,14 +209,14 @@
 			);
 			dependencies = (
 			);
-			name = JelloInject;
+			name = WobblyWindowsInject;
 			productName = JelloInject;
-			productReference = B414A10522F1E16A00D02192 /* JelloInject.bundle */;
+			productReference = B414A10522F1E16A00D02192 /* WobblyWindowsInject.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		B47DE1491F23FB4300DE9C65 /* Jello */ = {
+		B47DE1491F23FB4300DE9C65 /* WobblyWindows */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B47DE16B1F23FB4300DE9C65 /* Build configuration list for PBXNativeTarget "Jello" */;
+			buildConfigurationList = B47DE16B1F23FB4300DE9C65 /* Build configuration list for PBXNativeTarget "WobblyWindows" */;
 			buildPhases = (
 				B47DE1461F23FB4300DE9C65 /* Sources */,
 				B47DE1471F23FB4300DE9C65 /* Frameworks */,
@@ -226,14 +226,14 @@
 			);
 			dependencies = (
 			);
-			name = Jello;
+			name = WobblyWindows;
 			productName = Jello;
-			productReference = B47DE14A1F23FB4300DE9C65 /* Jello.app */;
+			productReference = B47DE14A1F23FB4300DE9C65 /* WobblyWindows.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B47DE1611F23FB4300DE9C65 /* JelloTests */ = {
+		B47DE1611F23FB4300DE9C65 /* WobblyWindowsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B47DE16E1F23FB4300DE9C65 /* Build configuration list for PBXNativeTarget "JelloTests" */;
+			buildConfigurationList = B47DE16E1F23FB4300DE9C65 /* Build configuration list for PBXNativeTarget "WobblyWindowsTests" */;
 			buildPhases = (
 				B47DE15E1F23FB4300DE9C65 /* Sources */,
 				B47DE15F1F23FB4300DE9C65 /* Frameworks */,
@@ -244,9 +244,9 @@
 			dependencies = (
 				B47DE1641F23FB4300DE9C65 /* PBXTargetDependency */,
 			);
-			name = JelloTests;
+			name = WobblyWindowsTests;
 			productName = JelloTests;
-			productReference = B47DE1621F23FB4300DE9C65 /* JelloTests.xctest */;
+			productReference = B47DE1621F23FB4300DE9C65 /* WobblyWindowsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -275,7 +275,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B47DE1451F23FB4300DE9C65 /* Build configuration list for PBXProject "Jello" */;
+			buildConfigurationList = B47DE1451F23FB4300DE9C65 /* Build configuration list for PBXProject "WobblyWindows" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -288,9 +288,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B47DE1491F23FB4300DE9C65 /* Jello */,
-				B47DE1611F23FB4300DE9C65 /* JelloTests */,
-				B414A10422F1E16A00D02192 /* JelloInject */,
+				B47DE1491F23FB4300DE9C65 /* WobblyWindows */,
+				B47DE1611F23FB4300DE9C65 /* WobblyWindowsTests */,
+				B414A10422F1E16A00D02192 /* WobblyWindowsInject */,
 			);
 		};
 /* End PBXProject section */
@@ -332,7 +332,7 @@
 				B414A11422F1E36C00D02192 /* WindowAdditions.mm in Sources */,
 				B414A11522F1E36C00D02192 /* Warp.swift in Sources */,
 				B414A11622F1E36C00D02192 /* Particle.swift in Sources */,
-				B414A11B22F1E38D00D02192 /* JelloInject.m in Sources */,
+				B414A11B22F1E38D00D02192 /* WobblyWindowsInject.m in Sources */,
 				B414A11722F1E36C00D02192 /* Spring.swift in Sources */,
 				B414A11822F1E36C00D02192 /* Solver.swift in Sources */,
 			);
@@ -360,7 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B47DE1671F23FB4300DE9C65 /* JelloTests.swift in Sources */,
+				B47DE1671F23FB4300DE9C65 /* WobblyWindowsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +369,7 @@
 /* Begin PBXTargetDependency section */
 		B47DE1641F23FB4300DE9C65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B47DE1491F23FB4300DE9C65 /* Jello */;
+			target = B47DE1491F23FB4300DE9C65 /* WobblyWindows */;
 			targetProxy = B47DE1631F23FB4300DE9C65 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -394,15 +394,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = M597FA553U;
-				INFOPLIST_FILE = "JelloInject/JelloInject-Info.plist";
+				INFOPLIST_FILE = "WobblyWindowsInject/WobblyWindowsInject-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.decode.JelloInject;
-				PRODUCT_MODULE_NAME = Jello;
+				PRODUCT_BUNDLE_IDENTIFIER = com.decode.WobblyWindowsInject;
+				PRODUCT_MODULE_NAME = WobblyWindows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Jello/Supporting Files/Jello-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WobblyWindows/Supporting Files/WobblyWindows-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -416,14 +416,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = M597FA553U;
-				INFOPLIST_FILE = "JelloInject/JelloInject-Info.plist";
+				INFOPLIST_FILE = "WobblyWindowsInject/WobblyWindowsInject-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.decode.JelloInject;
-				PRODUCT_MODULE_NAME = Jello;
+				PRODUCT_BUNDLE_IDENTIFIER = com.decode.WobblyWindowsInject;
+				PRODUCT_MODULE_NAME = WobblyWindows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Jello/Supporting Files/Jello-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WobblyWindows/Supporting Files/WobblyWindows-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -543,17 +543,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Jello/Supporting Files/Jello.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "WobblyWindows/Supporting Files/WobblyWindows.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Jello/Supporting Files/Jello-Info.plist";
+				INFOPLIST_FILE = "WobblyWindows/Supporting Files/WobblyWindows-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.decode.Jello;
+				PRODUCT_BUNDLE_IDENTIFIER = com.decode.WobblyWindows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Jello/Supporting Files/Jello-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WobblyWindows/Supporting Files/WobblyWindows-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -563,17 +563,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Jello/Supporting Files/Jello.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "WobblyWindows/Supporting Files/WobblyWindows.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "Jello/Supporting Files/Jello-Info.plist";
+				INFOPLIST_FILE = "WobblyWindows/Supporting Files/WobblyWindows-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.decode.Jello;
+				PRODUCT_BUNDLE_IDENTIFIER = com.decode.WobblyWindows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Jello/Supporting Files/Jello-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WobblyWindows/Supporting Files/WobblyWindows-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -585,12 +585,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = M597FA553U;
-				INFOPLIST_FILE = JelloTests/Info.plist;
+				INFOPLIST_FILE = WobblyWindowsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.collaris.JelloTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.collaris.WobblyWindowsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jello.app/Contents/MacOS/Jello";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WobblyWindows.app/Contents/MacOS/WobblyWindows";
 			};
 			name = Debug;
 		};
@@ -601,19 +601,19 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = M597FA553U;
-				INFOPLIST_FILE = JelloTests/Info.plist;
+				INFOPLIST_FILE = WobblyWindowsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.collaris.JelloTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.collaris.WobblyWindowsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jello.app/Contents/MacOS/Jello";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WobblyWindows.app/Contents/MacOS/WobblyWindows";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B414A10A22F1E16A00D02192 /* Build configuration list for PBXNativeTarget "JelloInject" */ = {
+		B414A10A22F1E16A00D02192 /* Build configuration list for PBXNativeTarget "WobblyWindowsInject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B414A10822F1E16A00D02192 /* Debug */,
@@ -622,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B47DE1451F23FB4300DE9C65 /* Build configuration list for PBXProject "Jello" */ = {
+		B47DE1451F23FB4300DE9C65 /* Build configuration list for PBXProject "WobblyWindows" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B47DE1691F23FB4300DE9C65 /* Debug */,
@@ -631,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B47DE16B1F23FB4300DE9C65 /* Build configuration list for PBXNativeTarget "Jello" */ = {
+		B47DE16B1F23FB4300DE9C65 /* Build configuration list for PBXNativeTarget "WobblyWindows" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B47DE16C1F23FB4300DE9C65 /* Debug */,
@@ -640,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B47DE16E1F23FB4300DE9C65 /* Build configuration list for PBXNativeTarget "JelloTests" */ = {
+		B47DE16E1F23FB4300DE9C65 /* Build configuration list for PBXNativeTarget "WobblyWindowsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B47DE16F1F23FB4300DE9C65 /* Debug */,
