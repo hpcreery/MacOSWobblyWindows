@@ -266,6 +266,7 @@
 					B47DE1491F23FB4300DE9C65 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1100;
+						ProvisioningStyle = Manual;
 					};
 					B47DE1611F23FB4300DE9C65 = {
 						CreatedOnToolsVersion = 9.0;
@@ -392,7 +393,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = P2BY58D85Z;
+				DEVELOPMENT_TEAM = M597FA553U;
 				INFOPLIST_FILE = "JelloInject/JelloInject-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -414,7 +415,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = P2BY58D85Z;
+				DEVELOPMENT_TEAM = M597FA553U;
 				INFOPLIST_FILE = "JelloInject/JelloInject-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MTL_FAST_MATH = YES;
@@ -544,12 +545,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Jello/Supporting Files/Jello.entitlements";
 				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = P2BY58D85Z;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Jello/Supporting Files/Jello-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.decode.Jello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Jello/Supporting Files/Jello-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -562,12 +565,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Jello/Supporting Files/Jello.entitlements";
 				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = P2BY58D85Z;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Jello/Supporting Files/Jello-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.decode.Jello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Jello/Supporting Files/Jello-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -579,7 +584,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = P2BY58D85Z;
+				DEVELOPMENT_TEAM = M597FA553U;
 				INFOPLIST_FILE = JelloTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.collaris.JelloTests;
@@ -595,7 +600,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = P2BY58D85Z;
+				DEVELOPMENT_TEAM = M597FA553U;
 				INFOPLIST_FILE = JelloTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.collaris.JelloTests;
