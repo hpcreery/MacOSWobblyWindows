@@ -43,19 +43,23 @@ extern "C" {
 
 NSString const *key = @"warp";
 - (void)setWarp:(Warp *)warp {
+//  NSLog(@"setWarp");
   objc_setAssociatedObject(self, &key, warp, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (Warp *)warp {
+//  NSLog(@"warp");
   return objc_getAssociatedObject(self, &key);
 }
 
 
 + (void)load {
+//  NSLog(@"load");
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willMove:) name:NSWindowWillMoveNotification object:nil];
 }
 
 + (void) willMove:(id) notification {
+//  NSLog(@"willMove");
   NSWindow* window = (NSWindow*)[(NSNotification*)notification object];
   
   // Fallback for whatsapp and IDEA
@@ -70,12 +74,13 @@ NSString const *key = @"warp";
 NSTimer *timer;
 id monitor;
 - (void) windowMoves:(id) notification {
+//  NSLog(@"windowMoves");
   NSWindow* window = (NSWindow*)[(NSNotification*)notification object];
   timer = [NSTimer scheduledTimerWithTimeInterval:(1.0f / 60.0f) target:self selector:@selector(windowMoved:) userInfo:window repeats:YES];
 
-  if (monitor != NULL) { // only disable mouseup monitor when we move a window again, because sometimes the first event does not fully trigger.
-    [NSEvent removeMonitor:monitor];
-  }
+//  if (monitor != NULL) { // only disable mouseup monitor when we move a window again, because sometimes the first event does not fully trigger.
+//    [NSEvent removeMonitor:monitor];
+//  }
   monitor = [NSEvent addGlobalMonitorForEventsMatchingMask:NSEventMaskLeftMouseUp | NSEventMaskRightMouseUp handler:^(NSEvent *event) {
     [window moveStopped];
   }];
@@ -83,23 +88,29 @@ id monitor;
 
 NSTimeInterval previousUpdate = 0.0;
 - (void) windowMoved:(NSTimer*) timer {
+//  NSLog(@"windowMoved");
   NSWindow* window = [timer userInfo];
-  NSTimeInterval timestamp = [[NSDate date] timeIntervalSince1970];
-  float diff = timestamp - previousUpdate;
-
+  float diff;
+  if (previousUpdate == 0.0) {
+    diff = 1.0/60.0;
+  } else {
+    NSTimeInterval timestamp = [[NSDate date] timeIntervalSince1970];
+    diff = timestamp - previousUpdate;
+    previousUpdate = timestamp;
+  }
   [window.warp dragAt:NSEvent.mouseLocation];
   [self.warp stepWithDelta: diff];
-
-  previousUpdate = timestamp;
 }
 
 - (void) moveStopped {
+//  NSLog(@"moveStopped");
   [timer invalidate];
   timer = NULL;
   [self.warp endDrag];
 }
 
 - (void) drawWarp {
+//  NSLog(@"drawWarp");
   CGSConnection cid = _CGSDefaultConnection();
 
   // normal grid
@@ -116,6 +127,7 @@ NSTimeInterval previousUpdate = 0.0;
 }
 
 - (void) setFrameDirty:(NSRect) frame {
+//  NSLog(@"setFrameDirty");
   // This timeout prevents the setFrame and clearwindow to interfere with the previously set warps, which caused glitches.
   [NSTimer scheduledTimerWithTimeInterval:(1.0f/10.0f) repeats:false block:^(NSTimer * _Nonnull timer) {
     [self setFrame:frame display:NO];
@@ -123,5 +135,13 @@ NSTimeInterval previousUpdate = 0.0;
     CGSSetWindowWarp(cid, CGSWindow([self windowNumber]), 0, 0, NULL);
   }];
 }
+
+//- (void) log:(NSString) string {
+//  NSDateFormatter *DateFormatter=[[NSDateFormatter alloc] init];
+//
+//  [DateFormatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+//  NSLog(@"%@",[DateFormatter stringFromDate:[NSDate date]]);
+//  NSLog(@"%@",string);
+//}
 
 @end

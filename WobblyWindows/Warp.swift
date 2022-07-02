@@ -81,6 +81,7 @@ extension NSScreen {
   }
 
   @objc func step(delta: TimeInterval) {
+//    NSLog("delta %.3f", delta)
     if delta > 0.5 { return }
 //    self.steps += delta.milliseconds / 3
 //    let steps = floor(self.steps)
@@ -91,7 +92,7 @@ extension NSScreen {
 //    }
 
     for _ in 0 ..< 15 {
-      solver.step(particles: &particles, stepSize: CGFloat(15*delta))
+      solver.step(particles: &particles, stepSize: CGFloat(20*delta))
     }
 
     // Bounce off top edge
@@ -168,8 +169,7 @@ extension NSScreen {
           offset: CGVector(dx: point.x - particles[particle].position.x, dy: point.y - particles[particle].position.y),
           springK: springK * (1 - pow(distance, 1/2.5))
       ))
-    }
-    
+    }    
     self.window.styleMask.remove(NSWindow.StyleMask.resizable)
   }
 
