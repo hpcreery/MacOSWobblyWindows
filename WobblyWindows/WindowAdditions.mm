@@ -4,6 +4,7 @@
 //
 //  Created by Dennis Collaris on 21/07/2017.
 //  Copyright © 2017 example. All rights reserved.
+//  Copyright © 2022 Hunter Creery. All rights reserved.
 //
 
 #import "WindowAdditions.h"

@@ -4,6 +4,7 @@
 //
 //  Created by Dennis Collaris on 22/07/2017.
 //  Copyright © 2017 collaris. All rights reserved.
+//  Copyright © 2022 Hunter Creery. All rights reserved.
 //
 
 import AppKit
