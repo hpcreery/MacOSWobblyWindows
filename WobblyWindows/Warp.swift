@@ -148,6 +148,7 @@ extension NSScreen {
   }
 
   @objc public func startDrag(at point: CGPoint) {
+    self.alreadySetFrame = false
     let distances = particles
       .map { $0.position.distanceTo(point: point) }
     
@@ -183,7 +184,9 @@ extension NSScreen {
     }
   }
 
+  var alreadySetFrame = false
   @objc public func endDrag() {
+    if alreadySetFrame { return }
     let idx = GRID_WIDTH * (GRID_HEIGHT - 1) + GRID_HEIGHT * (GRID_WIDTH - 1)
     springs.removeLast(springs.count - idx)
     if particles.indices.contains(GRID_WIDTH * GRID_HEIGHT) { particles.remove(at: GRID_WIDTH * GRID_HEIGHT) }
@@ -208,6 +211,7 @@ extension NSScreen {
         )
 
         self.window.setFrameDirty(frame)
+        self.alreadySetFrame = true
 
         self.window.styleMask.insert(NSWindow.StyleMask.resizable)
       } else {

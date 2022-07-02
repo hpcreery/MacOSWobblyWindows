@@ -62,10 +62,8 @@ NSString const *key = @"warp";
 //  NSLog(@"willMove");
   NSWindow* window = (NSWindow*)[(NSNotification*)notification object];
   
-  // Fallback for whatsapp and IDEA
-  if (window.warp == NULL) {
-    window.warp = [[Warp alloc] initWithWindow:window];
-  }
+  //Reinit window since it may have moved in different method
+  window.warp = [[Warp alloc] initWithWindow:window];
   
   [window.warp startDragAt: NSEvent.mouseLocation];
   [window windowMoves: notification];
@@ -78,9 +76,9 @@ id monitor;
   NSWindow* window = (NSWindow*)[(NSNotification*)notification object];
   timer = [NSTimer scheduledTimerWithTimeInterval:(1.0f / 60.0f) target:self selector:@selector(windowMoved:) userInfo:window repeats:YES];
 
-//  if (monitor != NULL) { // only disable mouseup monitor when we move a window again, because sometimes the first event does not fully trigger.
-//    [NSEvent removeMonitor:monitor];
-//  }
+  if (monitor != NULL) { // only disable mouseup monitor when we move a window again, because sometimes the first event does not fully trigger.
+    [NSEvent removeMonitor:monitor];
+  }
   monitor = [NSEvent addGlobalMonitorForEventsMatchingMask:NSEventMaskLeftMouseUp | NSEventMaskRightMouseUp handler:^(NSEvent *event) {
     [window moveStopped];
   }];
