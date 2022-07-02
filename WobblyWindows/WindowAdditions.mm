@@ -74,14 +74,15 @@ id monitor;
 - (void) windowMoves:(id) notification {
 //  NSLog(@"windowMoves");
   NSWindow* window = (NSWindow*)[(NSNotification*)notification object];
-  timer = [NSTimer scheduledTimerWithTimeInterval:(1.0f / 60.0f) target:self selector:@selector(windowMoved:) userInfo:window repeats:YES];
-
-  if (monitor != NULL) { // only disable mouseup monitor when we move a window again, because sometimes the first event does not fully trigger.
-    [NSEvent removeMonitor:monitor];
-  }
   monitor = [NSEvent addGlobalMonitorForEventsMatchingMask:NSEventMaskLeftMouseUp | NSEventMaskRightMouseUp handler:^(NSEvent *event) {
     [window moveStopped];
   }];
+  timer = [NSTimer scheduledTimerWithTimeInterval:(1.0f / 60.0f) target:self selector:@selector(windowMoved:) userInfo:window repeats:YES];
+
+//  if (monitor != NULL) { // only disable mouseup monitor when we move a window again, because sometimes the first event does not fully trigger.
+//    [NSEvent removeMonitor:monitor];
+//  }
+
 }
 
 NSTimeInterval previousUpdate = 0.0;
