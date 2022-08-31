@@ -10,9 +10,14 @@ import Foundation
 
 extension CGPoint {
   func distanceTo(point: CGPoint) -> CGFloat {
-    let distx = self.x - point.x
-    let disty = self.y - point.y
-    return sqrt(pow(distx, 2) + pow(disty, 2))
+    let distx = abs(self.x - point.x)
+    let disty = abs(self.y - point.y)
+    if (distx > disty) {
+      return distx + 0.337 * disty
+    } else {
+      return disty + 0.337 * distx
+    }
+//    return sqrt(pow(distx, 2) + pow(disty, 2))
   }
 }
 

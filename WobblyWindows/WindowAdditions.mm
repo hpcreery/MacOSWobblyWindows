@@ -57,6 +57,7 @@ NSString const *key = @"warp";
 + (void)load {
 //  NSLog(@"load");
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willMove:) name:NSWindowWillMoveNotification object:nil];
+//  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didResize:) name:NSWindowDidResizeNotification object:nil];
 }
 
 + (void) willMove:(id) notification {
@@ -114,8 +115,8 @@ NSTimeInterval previousUpdate = 0.0;
   CGSConnection cid = _CGSDefaultConnection();
 
   // normal grid
-  int GRID_WIDTH = 10;
-  int GRID_HEIGHT = 10;
+  int GRID_WIDTH = 6;
+  int GRID_HEIGHT = 6;
   CGPointWarp mesh[GRID_HEIGHT][GRID_WIDTH];
   for (int y = 0; y < GRID_HEIGHT; y++) {
     for (int x = 0; x < GRID_WIDTH; x++) {

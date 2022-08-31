@@ -2,7 +2,7 @@
 
 # MacOS Wobbly Windows
 
-A wobbly windows implementation for MacOS inspired by [Compiz](http://www.compiz.org/) for Linux. 
+A wobbly windows implementation for MacOS inspired by [Compiz-Fusion](https://compiz-fusion.org/wiki_subdomain/plugins/wobbly.html) for Linux. 
 
 <sup>*Note: this is only a proof of concept*</sup>
 

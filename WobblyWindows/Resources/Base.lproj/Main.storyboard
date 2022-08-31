@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -674,7 +676,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Jello" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WobblyWindows" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -704,13 +706,13 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Jello" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="WobblyWindows" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="eqy-mr-UG2">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eWh-Mo-q9X">
-                                <rect key="frame" x="198" y="159" width="54" height="16"/>
+                                <rect key="frame" x="198" y="133" width="54" height="16"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Wobble!" id="w0i-ap-SFo">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -718,7 +720,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sUT-iq-CSF">
-                                <rect key="frame" x="187" y="118" width="76" height="32"/>
+                                <rect key="frame" x="188" y="92" width="75" height="32"/>
                                 <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4zO-ZN-J0Y">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -727,10 +729,12 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="sUT-iq-CSF" firstAttribute="top" secondItem="eWh-Mo-q9X" secondAttribute="bottom" constant="14" id="HeO-fQ-oed"/>
-                            <constraint firstItem="sUT-iq-CSF" firstAttribute="centerX" secondItem="eqy-mr-UG2" secondAttribute="centerX" id="e7c-zs-x5T"/>
+                            <constraint firstItem="sUT-iq-CSF" firstAttribute="centerX" secondItem="JvT-Ya-DPR" secondAttribute="centerX" id="e7c-zs-x5T"/>
                             <constraint firstItem="sUT-iq-CSF" firstAttribute="centerX" secondItem="eWh-Mo-q9X" secondAttribute="centerX" id="jy8-aw-GOW"/>
-                            <constraint firstItem="sUT-iq-CSF" firstAttribute="centerY" secondItem="eqy-mr-UG2" secondAttribute="centerY" constant="15" id="xk9-Se-7PS"/>
+                            <constraint firstItem="sUT-iq-CSF" firstAttribute="centerY" secondItem="JvT-Ya-DPR" secondAttribute="centerY" constant="15" id="xk9-Se-7PS"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="EAN-7a-ItJ"/>
+                        <viewLayoutGuide key="layoutMargins" id="JvT-Ya-DPR"/>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

@@ -10,10 +10,10 @@
 import AppKit
 
 
-internal var GRID_WIDTH = 10
-internal var GRID_HEIGHT = 10
-internal var springK: CGFloat = 2
-internal var friction: CGFloat = 2
+internal var GRID_WIDTH = 6
+internal var GRID_HEIGHT = 6
+internal var springK: CGFloat = 1
+internal var friction: CGFloat = 1
 
 internal func convert(toPosition i: Int) -> (Int, Int) {
   return (i % GRID_WIDTH, i / GRID_WIDTH)
@@ -78,7 +78,7 @@ extension NSScreen {
     
     self.solver = VelocityVerlet(warp: self)
 
-    NotificationCenter.default.addObserver(self, selector: #selector(Warp.didResize), name: NSWindow.didResizeNotification, object: nil)
+//    NotificationCenter.default.addObserver(self, selector: #selector(Warp.didResize), name: NSWindow.didResizeNotification, object: nil)
   }
 
   @objc func step(delta: TimeInterval) {
@@ -92,9 +92,9 @@ extension NSScreen {
 //      return
 //    }
 
-    for _ in 0 ..< 15 {
-      solver.step(particles: &particles, stepSize: CGFloat(20*delta))
-    }
+//    for a in 0 ..< 15 {
+    solver.step(particles: &particles, stepSize: CGFloat(300*delta))
+//    }
 
     // Bounce off top edge
     if let screen = NSScreen.current {
@@ -113,6 +113,7 @@ extension NSScreen {
   }
 
   @objc func didResize(notification: NSNotification) {
+//    NSLog("warp: didResize")
     guard let window = notification.object as? NSWindow,
           window == self.window else { return }
 
